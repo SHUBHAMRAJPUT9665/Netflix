@@ -6,24 +6,14 @@ function Header() {
   return (
     <>
     <div>
-      <div class="header">
+      <div class="header" className='px-12 py-2'>
         <nav>
-            <img src="images/logo.png" alt="logo" class="logo" />
+            <img src="https://cdn.cookielaw.org/logos/dd6b162f-1a32-456a-9cfe-897231c7763c/4345ea78-053c-46d2-b11e-09adaef973dc/Netflix_Logo_PMS.png" className='h-10 mr-3' alt="logo" class="logo" />
             <div>
                 <button class="language-btn">English<img src="images/down-icon.png" alt="" /></button>
-                <a href="./sign up form/index.html"><button class="sign">Sign In</button></a>
+                <a href="./sign up form/index.html"><button class="sign"><span className='font-bold'>Sign In</span></button></a>
             </div>
         </nav>
-        <div class="header-content">
-            <h1>Unlimited movies,TV Shows and more.</h1>
-            <h3>Watch anywhere. Cancel anytime.</h3>
-            <p>Ready to watch? Enter your email to create or restart your membership.</p>
-            
-            <form action="" class="email-signup">
-                <input type="email" placeholder="Email address" required />
-                <button type="submit">Get Started</button>
-            </form>
-        </div>
     </div>
 
     </div>
