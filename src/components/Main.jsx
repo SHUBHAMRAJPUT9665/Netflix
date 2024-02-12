@@ -18,13 +18,13 @@ function Main() {
             </div>
         </nav>
         <div class="header-content">
-            <h1 className='text-2xl'>Unlimited movies,TV Shows and more.</h1>
+            <h1 className='text-2xl '>Unlimited movies,TV Shows and more.</h1>
             <h3 className='text-2xl'>Watch anywhere. Cancel anytime.</h3>
             <p className='text-2xl font-semibold'>Ready to watch? Enter your email to create or restart your membership.</p>
             
             <form action="" class="email-signup">
-                <input type="email" placeholder="Email address" required />
-                <button type="submit">Get Started</button>
+                <input  type="email" placeholder="Email address" required />
+                <button  type="submit">Get Started</button>
             </form>
         </div>
     </div>
