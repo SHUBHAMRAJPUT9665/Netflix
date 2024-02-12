@@ -58,11 +58,15 @@ function Login() {
         .then((userCredential) => {
           // Signed in
           const user = userCredential.user;
+          console.log(user)
+          navigate('/Browse');
+          
           // ...
         })
         .catch((error) => {
           const errorCode = error.code;
           const errorMessage = error.message;
+          seterrorMessage(errorCode, + '', errorMessage)
         });
     }
   }
