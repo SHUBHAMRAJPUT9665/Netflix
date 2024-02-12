@@ -10,11 +10,11 @@ function Main() {
   return (
   <div>
     <div class="header">
-        <nav className='px-12'>
+        <nav className='pt-5 mx-10'>
             <img className='py-3' src="src\assets\logo.png" alt="logo" class="logo"/>
             <div>
                 <button class="language-btn">English<img src="images/down-icon.png" alt=""/></button>
-                <button class="sign" onClick={() => navigate('/Login') }>Sign In</button>
+                <button class="sign" onClick={() => navigate('/Login')} className='text-sm font-bold'>Sign In</button>
             </div>
         </nav>
         <div class="header-content">
@@ -40,7 +40,6 @@ function Main() {
                 <img src="src\assets\feature-1.png"/>
             </div>
         </div>
-
         <div class="row">
             <div class="img-col" id="img-1">
                 <img src="src\assets\feature-2.png"/>
