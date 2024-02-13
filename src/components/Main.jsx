@@ -9,6 +9,7 @@ function Main() {
     const navigate = useNavigate();
   return (
   <div>
+    
     <div class="header">
         <nav className='pt-5 mx-10'>
             <img className='py-3' src="src\assets\logo.png" alt="logo" class="logo"/>

@@ -7,5 +7,4 @@ function Browse() {
     </div>
   )
 }
-
 export default Browse;

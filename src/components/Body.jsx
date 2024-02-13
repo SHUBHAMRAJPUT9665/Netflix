@@ -4,6 +4,7 @@ import { RouterProvider } from 'react-router-dom'
 import Browse from './Browse'
 import Login from './Login'
 import Main from './Main'
+import Video from './Video'
 
 function Body() {
     const appRouter = createBrowserRouter([
@@ -16,8 +17,12 @@ function Body() {
             element:<Browse />,
         },
         {
-          path:'/',
+          path:'/Main',
           element: <Main />
+        },
+        {
+          path:'/',
+          element:<Video />
         }
     ]);
   return (
