@@ -10,6 +10,8 @@ import { signInWithEmailAndPassword } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
 import Footer from "./Footer";
 import { updateProfile } from "firebase/auth";
+import {useDispatch} from 'react-redux';
+import { addUser } from "../store/userSlice";
 
 function Login() {
   const [isSignInForm, setisSignInForm] = useState(true);
@@ -20,6 +22,8 @@ function Login() {
   const name = useRef(null);
 
   const navigate = useNavigate();
+
+  const dispatch = useDispatch();
 
   //Dispathcer
   function handleButtonClick() {
@@ -46,6 +50,14 @@ function Login() {
             photoURL: "https://avatars.githubusercontent.com/u/113655062?v=4",
           })
             .then(() => {
+              const {uid,email,displayName,photoURL} = auth.currentUser;
+              dispatch(addUser({
+                uid:uid,
+                email:email,
+                displayName:displayName,
+                photoURL
+              }))
+
               navigate("/Browse");
             })
             .catch((error) => {
