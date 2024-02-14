@@ -1,14 +1,16 @@
-import React from 'react'
-import SignOutHeader from './SignOutHeader'
-
+import React from "react";
+import SignOutHeader from "./SignOutHeader";
+import useNowPlayingMovies from "../hooks/useNowPlayingMovies";
 
 function Browse() {
-
+  // custom hooks for fetching movie 
+  useNowPlayingMovies();
+  
   return (
     <>
-    <SignOutHeader />   
+      <SignOutHeader />
     </>
-
-  )
+  );
 }
+
 export default Browse;
