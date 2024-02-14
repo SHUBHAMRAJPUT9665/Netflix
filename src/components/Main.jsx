@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from './Header';
 import {useNavigate} from 'react-router-dom'
+import SignOutHeader from './SignOutHeader';
 
 import './Main.css';
 
@@ -11,13 +12,7 @@ function Main() {
   <div>
     
     <div class="header">
-        <nav className='pt-5 mx-10'>
-            <img className='py-3' src="src\assets\logo.png" alt="logo" class="logo"/>
-            <div>
-                <button class="language-btn">English<img src="images/down-icon.png" alt=""/></button>
-                <button class="sign" onClick={() => navigate('/Login')} className='text-sm font-bold'>Sign In</button>
-            </div>
-        </nav>
+    <SignOutHeader/>
         <div class="header-content">
             <h1 className='text-2xl '>Unlimited movies,TV Shows and more.</h1>
             <h3 className='text-2xl'>Watch anywhere. Cancel anytime.</h3>

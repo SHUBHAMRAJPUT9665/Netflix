@@ -12,6 +12,7 @@ import Footer from "./Footer";
 import { updateProfile } from "firebase/auth";
 import {useDispatch} from 'react-redux';
 import { addUser } from "../store/userSlice";
+import  SignOutHeader from './SignOutHeader'
 
 function Login() {
   const [isSignInForm, setisSignInForm] = useState(true);
@@ -21,7 +22,6 @@ function Login() {
   const password = useRef(null);
   const name = useRef(null);
 
-  const navigate = useNavigate();
 
   const dispatch = useDispatch();
 
@@ -57,8 +57,6 @@ function Login() {
                 displayName:displayName,
                 photoURL
               }))
-
-              navigate("/Browse");
             })
             .catch((error) => {
               seterrorMessage(error.message)
@@ -82,7 +80,6 @@ function Login() {
           // Signed in
           const user = userCredential.user;
           // console.log(user);
-          navigate("/Browse"); // ...
         })
         .catch((error) => {
           const errorCode = error.code;
@@ -100,7 +97,7 @@ function Login() {
     <>
       <div className="header">
         {/* // header component */}
-        <Header />
+        <SignOutHeader/>
         <div>
           <form
             onSubmit={(e) => e.preventDefault()}
