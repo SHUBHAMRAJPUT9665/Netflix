@@ -36,7 +36,22 @@ function SignOutHeader() {
     }, []);
   return (
     <div>
-      <div>
+      {user?<div>
+      <div className='px-12 absolute'>
+        <nav>
+            <img  onClick={() => navigate('/Main')} src="https://cdn.cookielaw.org/logos/dd6b162f-1a32-456a-9cfe-897231c7763c/4345ea78-053c-46d2-b11e-09adaef973dc/Netflix_Logo_PMS.png" className='h-10 mr-3 ' alt="logo" class="logo" />
+            {user? <div className='cursor-pointer'>
+                <img onClick={() => navigate('/Browse')} className='w-8 rounded-sm' src='src\assets\user.png' alt="" /> 
+                <span onClick={handleSignout} className='font-semibold text-red-600'>Sign out </span>
+            </div>
+            : 
+            <div>
+                <button class="language-btn">English<img src="images/down-icon.png" alt="" /></button>
+                <button  class="sign"><span onClick={() => navigate('/Login')} className='font-bold'>Login</span></button>
+            </div>}
+        </nav>
+    </div>
+    </div>:<div>
       <div class="header" className='px-12'>
         <nav>
             <img  onClick={() => navigate('/Main')} src="https://cdn.cookielaw.org/logos/dd6b162f-1a32-456a-9cfe-897231c7763c/4345ea78-053c-46d2-b11e-09adaef973dc/Netflix_Logo_PMS.png" className='h-10 mr-3 ' alt="logo" class="logo" />
@@ -51,7 +66,7 @@ function SignOutHeader() {
             </div>}
         </nav>
     </div>
-    </div>
+    </div>}
     </div>
   );
 }
