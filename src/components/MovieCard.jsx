@@ -3,9 +3,9 @@ import { Image_Cdn } from '../utils/constant'
 
 function MovieCart({posterPath}) {
   return (
-    <div className='flex w-56 hover:cursor-pointer  '>
+    <div className='flex w-40 hover:cursor-pointer  '>
       <img 
-      className='px-3 py-1'
+      className='px-2 py-1'
       src={Image_Cdn+posterPath}
       alt="Movie Cart" 
     />    </div>
