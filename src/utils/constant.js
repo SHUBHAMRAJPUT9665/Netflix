@@ -6,3 +6,6 @@ export const API_OPTIONS = {
     },
   };
   
+
+
+  export const Image_Cdn = 'https://image.tmdb.org/t/p/w780'
