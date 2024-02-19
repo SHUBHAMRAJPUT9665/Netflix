@@ -9,9 +9,9 @@ function SecondaryContainer() {
   return (
     movie.nowPlayingMovies && (
     <div className="bg-black">
-      <div className="text-white  -mt-32 pl-12  relative z-10">
+      <div className="text-white  -mt-12 pl-12  relative z-10">
       <MovieList title={"Now Playing"} movies={movie.nowPlayingMovies} />
-      <MovieList title={"Trending Movies"} movies={movie.nowPlayingMovies} />
+      <MovieList title={"Trending Movies"} movies={movie.trendingMovies} />
       <MovieList title={"Popular Movies"} movies={movie.popularMovies} />
       <MovieList title={"Horror Movies"} movies={movie.nowPlayingMovies} />
       {/* Secondary Containeer 

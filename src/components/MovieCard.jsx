@@ -13,3 +13,5 @@ function MovieCart({posterPath}) {
 }
 
 export default MovieCart
+
+
