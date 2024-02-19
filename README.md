@@ -1,5 +1,7 @@
 
 # Netflix
+# Project link
+-https://netflix-woad-six.vercel.app
 
 - recreate the popular streaming platform Netflix using React.js and Firebase. Leveraging React's component-based architecture, we're designing a user-friendly interface with features like dynamic content loading and smooth navigation. Firebase is utilized for real-time data storage, authentication, and hosting, ensuring a seamless and secure user experience. 
 
