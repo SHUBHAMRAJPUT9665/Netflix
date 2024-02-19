@@ -37,7 +37,7 @@ function Footer() {
             </div>
         </div>
         <button class="language-btn">English<img src="images/down-icon.png" alt=""/></button>
-        <p class="Copyright-text">netflix India</p>
+        <p class="Copyright-text">netflix India Developed by <span className='text-white font-semibold text-2xl'>Shubham Rajput</span></p>
     </div>
   );
 }

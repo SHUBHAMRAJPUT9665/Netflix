@@ -34,12 +34,12 @@ function Main() {
                 </p>
             </div>
             <div class="img-col">
-                <img src="src\assets\feature-1.png"/>
+            <img src='https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png' />
             </div>
         </div>
         <div class="row">
             <div class="img-col" id="img-1">
-                <img src="src\assets\feature-2.png"/>
+                <img src='https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg'/>
             </div>
             <div class="text-col">
                 <h2>Download your shows to watch offline</h2>
@@ -54,13 +54,13 @@ function Main() {
                 </p>
             </div>
             <div class="img-col">
-                <img src="src\assets\feature-3.png"/>
+                <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/device-pile-in.png"/>
             </div>
         </div>
 
         <div class="row">
             <div class="img-col" >
-                <img src="src\assets\feature-4.png"/>
+                <img src="https://occ-0-2164-1490.1.nflxso.net/dnm/api/v6/19OhWN2dO19C9txTON9tvTFtefw/AAAABVr8nYuAg0xDpXDv0VI9HUoH7r2aGp4TKRCsKNQrMwxzTtr-NlwOHeS8bCI2oeZddmu3nMYr3j9MjYhHyjBASb1FaOGYZNYvPBCL.png?r=54d"/>
             </div>
             <div class="text-col">
                 <h2>Create profiles for kids </h2>
