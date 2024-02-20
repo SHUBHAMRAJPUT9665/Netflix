@@ -39,7 +39,7 @@ function SignOutHeader() {
       {user?
       <div className='px-12 absolute z-10 '>
         <nav className=''>
-            <img  onClick={() => navigate('/Main')} src="https://cdn.cookielaw.org/logos/dd6b162f-1a32-456a-9cfe-897231c7763c/4345ea78-053c-46d2-b11e-09adaef973dc/Netflix_Logo_PMS.png" className='h-10 ' alt="logo" class="logo" />
+            <img  onClick={() => navigate('/Main')} src="https://cdn.cookielaw.org/logos/dd6b162f-1a32-456a-9cfe-897231c7763c/4345ea78-053c-46d2-b11e-09adaef973dc/Netflix_Logo_PMS.png" className='h-10 bg-red-800' alt="logo" class="logo" />
              <div className='cursor-pointer'>
                 <img  onClick={() => navigate('/Browse')} className='w-5 rounded-sm' src='src\assets\user.png' alt="" /> 
                 <span  onClick={handleSignout} className='font-semibold text-red-600'>Sign out </span>
