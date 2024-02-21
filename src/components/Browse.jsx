@@ -6,27 +6,33 @@ import SecondaryContainer from "./SecondaryContainer";
 import usePopularMovies from "../hooks/usePopularMovies";
 import useTrendingMovies from "../hooks/useTrendingMovies";
 import Footer from './Footer'
+import Search from "./Search";
+import {useSelector} from 'react-redux';
 function Browse() {
   // custom hooks for fetching movie 
+
+  const showSearch = useSelector((state) => state.gpt.showGptSearch)
+
+  console.log(showSearch);
   useNowPlayingMovies();
   usePopularMovies();
   useTrendingMovies();
   
   
   return (
-    <>
+    <div>
       <SignOutHeader />
-      <MainContainer />
-      <SecondaryContainer />
-      <Footer />      {/*
-
-      MainContainer  
-         -videoBg
-      SecondaryContainer
-          -MovieList
-             -card in 
-      */ }
-    </>
+      {showSearch?( 
+        <Search /> 
+        ): (
+        <>
+         <MainContainer />
+         <SecondaryContainer />
+        </>
+      )}
+      <Footer />  
+    </div>
+      
   );
 }
 

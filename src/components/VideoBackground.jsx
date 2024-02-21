@@ -9,7 +9,6 @@ function VideoBackground({movieId}) {
 
     const trailerVideo = useSelector(state => state.movies?.trailerVideo)
     const dispatch = useDispatch();
-    console.log(movieId)
 
     
     const getMovieVideos = async () =>{

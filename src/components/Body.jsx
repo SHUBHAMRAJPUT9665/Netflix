@@ -5,6 +5,7 @@ import Browse from './Browse'
 import Login from './Login'
 import Main from './Main'
 import Video from './Video'
+import Search from './Search'
 
 
 function Body() {
@@ -24,6 +25,10 @@ function Body() {
         {
           path:'/',
           element:<Video />
+        },
+        {
+          path:'/Search',
+          element:<Search />
         }
     ]);
     

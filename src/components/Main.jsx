@@ -11,7 +11,6 @@ function Main() {
     const navigate = useNavigate();
   return (
   <div>
-    
     <div class="header">
     <SignOutHeader/>
         <div class="header-content">
@@ -84,7 +83,6 @@ You can watch as much as you want, whenever you want, without a single ad – al
                 </p>
             </div>
             </li>
-
             <li>
                 <input type="radio" name="accordion" id="second"/>
                 <label for="second">How much does Netflix cost?</label>
