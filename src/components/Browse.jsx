@@ -20,18 +20,16 @@ function Browse() {
   
   
   return (
-    <div>
+   
+    
+    <>
       <SignOutHeader />
-      {showSearch?( 
-        <Search /> 
-        ): (
-        <>
-         <MainContainer />
-         <SecondaryContainer />
-        </>
-      )}
-      <Footer />  
-    </div>
+      
+      <MainContainer />
+      <SecondaryContainer />
+    
+   <Footer />  
+    </>
       
   );
 }
