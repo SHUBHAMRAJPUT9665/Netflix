@@ -1,7 +1,7 @@
 
 # Netflix
 # Project link
--https://netflix-woad-six.vercel.app
+- https://netflix-seven-sandy.vercel.app/
 
 ## 🚀 About Me
 
