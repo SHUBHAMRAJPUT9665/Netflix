@@ -1,10 +1,13 @@
 import React from 'react';
+import MoviesSuggestion from './MoviesSuggestion';
+import SearchBar from './SearchBar';
 
 function Search() {
   return (
-    <div>
-      
-    </div>
+   <>
+    <MoviesSuggestion />
+    <SearchBar />
+   </>
   );
 }
 

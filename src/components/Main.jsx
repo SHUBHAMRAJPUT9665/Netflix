@@ -18,9 +18,9 @@ function Main() {
             <h3 className='text-2xl mt-5'>Watch anywhere. Cancel anytime.</h3>
             <p className='text-2xl font-semibold'>Ready to watch? Enter your email to create or restart your membership.</p>
             
-            <form action="" class="email-signup">
+            <form  action="" class="email-signup">
                 <input  type="email" placeholder="Email address" required />
-                <button  type="submit">Get Started</button>
+                <button className=''  type="submit">Get Started</button>
             </form>
         </div>
     </div>

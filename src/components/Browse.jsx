@@ -25,7 +25,6 @@ function Browse() {
       {showSearch ? (
         <>
           <Search />
-          <Footer />
         </>
       ) : (
         <>
