@@ -9,11 +9,14 @@ import { onAuthStateChanged } from "firebase/auth";
 import { useDispatch } from "react-redux";
 import { addUser, removeUser } from "../store/userSlice";
 import { toggleGptSearchView } from "../store/gptSlice";
+import { SUPPORTED_LANGUAGES } from "../utils/constant";
+import { changeLanguage } from "../store/configSlice";
 
 function SignOutHeader() {
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const user = useSelector((state) => state.user);
+   const showGptSearch = useSelector((state) => state.gpt.showGptSearch)
   const handleSignout = () => {
     signOut(auth)
       .then(() => {
@@ -47,6 +50,11 @@ function SignOutHeader() {
     // Toggle GPT Search
     dispatch(toggleGptSearchView());
   };
+
+  const handleLanguageChange = (e) => {
+    // console.log(e.target.value);
+    dispatch(changeLanguage(e.target.value));
+  };
   return (
     <div>
       {user ? (
@@ -61,6 +69,22 @@ function SignOutHeader() {
             />
           </nav>
           <div className="cursor-pointer flex items-center">
+          {showGptSearch? <select
+                  onChange={handleLanguageChange}
+                  class="language-btn"
+                  name=""
+                  id=""
+                >
+                  {SUPPORTED_LANGUAGES.map((lang) => (
+                    <option
+                      className="bg-gray-900"
+                      key={lang.identifier}
+                      value={lang.identifier}
+                    >
+                      {lang.name}
+                    </option>
+                  ))}
+                </select>:null}
             <button
               onClick={handleGptSearchClick}
               className="py-1 -mt-1 px-2 m-2 bg-red-700 flex justify-end rounded-md mx-4"
@@ -93,10 +117,26 @@ function SignOutHeader() {
                 class="logo"
               />
               <div>
-                <button class="language-btn">
+                <select
+                  onChange={handleLanguageChange}
+                  class="language-btn"
+                  name=""
+                  id=""
+                >
+                  {SUPPORTED_LANGUAGES.map((lang) => (
+                    <option
+                      className="bg-gray-900"
+                      key={lang.identifier}
+                      value={lang.identifier}
+                    >
+                      {lang.name}
+                    </option>
+                  ))}
+                </select>
+                {/* <button class="">
                   English
                   <img src="images/down-icon.png" alt="" />
-                </button>
+                </button> */}
                 <button class="sign">
                   <span
                     onClick={() => navigate("/Login")}
