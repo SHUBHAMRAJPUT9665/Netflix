@@ -3,24 +3,29 @@ import Header from './Header';
 import {useNavigate} from 'react-router-dom'
 import SignOutHeader from './SignOutHeader';
 import Footer from './Footer'
+import lang from "../utils/languageConstant";
+import {useSelector} from 'react-redux'
+
 
 import './Main.css';
 
 function Main() {
 
     const navigate = useNavigate();
+    const langKey = useSelector((state) => state.config.lang);
+
   return (
   <div>
     <div class="header">
     <SignOutHeader/>
         <div class="header-content">
-            <h1 className='text-2xl '>Unlimited movies,TV Shows and more.</h1>
-            <h3 className='text-2xl mt-5'>Watch anywhere. Cancel anytime.</h3>
-            <p className='text-2xl font-semibold'>Ready to watch? Enter your email to create or restart your membership.</p>
+            <h1 className='text-2xl '>{lang[langKey].headerh1}</h1>
+            <h3 className='text-2xl mt-5'>{lang[langKey].headerh3}</h3>
+            <p className='text-2xl font-semibold'>{lang[langKey].headerp}</p>
             
             <form  action="" class="email-signup">
                 <input  type="email" placeholder="Email address" required />
-                <button className=''  type="submit">Get Started</button>
+                <button className=''  type="submit">{lang[langKey].headerbutton}</button>
             </form>
         </div>
     </div>
@@ -28,8 +33,8 @@ function Main() {
     <div class="features">
         <div class="row">
             <div class="text-col">
-                <h2>Enjoy on your TV.</h2>
-                <p>Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.
+                <h2>{lang[langKey].featureh2}</h2>
+                <p>{lang[langKey].featurep}
                 </p>
             </div>
             <div class="img-col">
@@ -41,15 +46,15 @@ function Main() {
                 <img src='https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg'/>
             </div>
             <div class="text-col">
-                <h2>Download your shows to watch offline</h2>
-                <p>Save your favourites easily and always have something to watch.</p>
+                <h2>{lang[langKey].feature2h2}</h2>
+                <p>{lang[langKey].feature2p}</p>
             </div>
         </div>
 
         <div class="row">
             <div class="text-col">
-                <h2>Watch everywhere</h2>
-                <p>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.
+                <h2>{lang[langKey].feature3h2}</h2>
+                <p>{lang[langKey].feature3p}
                 </p>
             </div>
             <div class="img-col">
@@ -62,8 +67,8 @@ function Main() {
                 <img src="https://occ-0-2164-1490.1.nflxso.net/dnm/api/v6/19OhWN2dO19C9txTON9tvTFtefw/AAAABVr8nYuAg0xDpXDv0VI9HUoH7r2aGp4TKRCsKNQrMwxzTtr-NlwOHeS8bCI2oeZddmu3nMYr3j9MjYhHyjBASb1FaOGYZNYvPBCL.png?r=54d"/>
             </div>
             <div class="text-col">
-                <h2>Create profiles for kids </h2>
-                <p>Send children on adventures with their favourite characters in a space made just for them—free with your membership.
+                <h2>{lang[langKey].feature4h2}</h2>
+                <p>{lang[langKey].feature4p}
                 </p>
             </div>
         </div>
@@ -71,7 +76,7 @@ function Main() {
 
 
     <div class="faq">
-        <h2>Frequently Asked Questions</h2>
+        <h2>{lang[langKey].faqh2}</h2>
         <ul class="accordion">
             <li>
                 <input type="radio" name="accordion" id="first"/>

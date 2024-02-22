@@ -89,7 +89,7 @@ function SignOutHeader() {
               onClick={handleGptSearchClick}
               className="py-1 -mt-1 px-2 m-2 bg-red-700 flex justify-end rounded-md mx-4"
             >
-              Search
+              {showGptSearch?'Home':'Search'}
             </button>
             <img
               onClick={() => navigate("/Browse")}
