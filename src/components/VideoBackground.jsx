@@ -9,7 +9,9 @@ function VideoBackground({movieId}) {
 
     const trailerVideo = useSelector(state => state.movies?.trailerVideo)
     const dispatch = useDispatch();
-    console.log(movieId)
+
+    const TrailerVideos = useSelector((state) => state.movies. trailerVideo)
+
 
     
     const getMovieVideos = async () =>{
@@ -22,7 +24,9 @@ function VideoBackground({movieId}) {
   };
 
   useEffect(() => {
-    getMovieVideos();
+    if(!TrailerVideos){
+      getMovieVideos();
+    }
   }, []);
   return (
     <div className=" w-screen">

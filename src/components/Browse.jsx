@@ -13,7 +13,6 @@ function Browse() {
 
   const showSearch = useSelector((state) => state.gpt.showGptSearch);
 
-  console.log(showSearch);
   useNowPlayingMovies();
   usePopularMovies();
   useTrendingMovies();
