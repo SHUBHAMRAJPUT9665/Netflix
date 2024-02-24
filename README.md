@@ -1,5 +1,4 @@
 
-# Netflix
 # Project link
 - https://netflix-seven-sandy.vercel.app/
 
