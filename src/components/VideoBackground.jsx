@@ -24,7 +24,7 @@ function VideoBackground({ movieId }) {
 
     useEffect(() => {
         if (ClickMovie) {
-            getMovieVideos(ClickMovie);
+            getMovieVideos(ClickMovie.id);
         }
     }, [ClickMovie]);
 

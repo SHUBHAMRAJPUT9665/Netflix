@@ -4,16 +4,26 @@ import VideoTitle from "./VideoTitle";
 
 const MainContainer = () => {
   const movies = useSelector((store) => store.movies?.nowPlayingMovies);
-  if (!movies) return
+  const ClickMovie = useSelector((state) => state.movies?.ClickTrailerMovie);
 
-  const mainMovie = movies[12];
+  if (!movies) return null; // Return null if movies are not available
+
+  let mainMovie;
+  if (ClickMovie) {
+    
+    mainMovie = ClickMovie;
+  } else {
+    mainMovie = movies[12];
+  }
+
   const { original_title, overview, id } = mainMovie;
 
   return (
-    <div className=" bg-black md:pt-0">
+    <div className="bg-black md:pt-0">
       <VideoTitle title={original_title} overview={overview} />
       <VideoBackground movieId={id} />
     </div>
   );
 };
+
 export default MainContainer;
