@@ -12,8 +12,10 @@ function SecondaryContainer() {
       <div className="text-white     relative z-10 -mt-8">
       <MovieList title={"Now Playing"} movies={movie.nowPlayingMovies} />
       <MovieList title={"Trending Movies"} movies={movie.trendingMovies} />
+      <MovieList title={"Upcomig Movies"} movies={movie. upcomingMovies} />
       <MovieList title={"Popular Movies"} movies={movie.popularMovies} />
       <MovieList title={"Horror Movies"} movies={movie.nowPlayingMovies} />
+
       {/* Secondary Containeer 
       Now playing
       Trending

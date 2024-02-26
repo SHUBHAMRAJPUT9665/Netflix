@@ -8,6 +8,7 @@ import useTrendingMovies from "../hooks/useTrendingMovies";
 import Footer from "./Footer";
 import Search from "./Search";
 import { useSelector } from "react-redux";
+import useUpcomingMovies from "../hooks/useUpcomingMovies";
 function Browse() {
   // custom hooks for fetching movie
 
@@ -16,6 +17,7 @@ function Browse() {
   useNowPlayingMovies();
   usePopularMovies();
   useTrendingMovies();
+  useUpcomingMovies();
 
   return (
     <>
