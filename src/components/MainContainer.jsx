@@ -10,7 +10,6 @@ const MainContainer = () => {
 
   let mainMovie;
   if (ClickMovie) {
-    
     mainMovie = ClickMovie;
   } else {
     mainMovie = movies[12];
