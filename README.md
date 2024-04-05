@@ -4,9 +4,6 @@
 
 ## 🚀 About Me
 
-Hi, I'm Shubham Rajput, a passionate developer currently focused on learning TypeScript and building projects with React.js. With a keen interest in front-end development, I'm constantly exploring new technologies and frameworks to enhance my skills and create engaging user experiences.
-
-
 ## API Reference
 
 #### Firebase API
