@@ -15,6 +15,7 @@ import { addUser } from "../store/userSlice";
 import  SignOutHeader from './SignOutHeader'
 import toast from 'react-hot-toast'
 
+
 function Login() {
   const [isSignInForm, setisSignInForm] = useState(true);
   const [errorMessage, seterrorMessage] = useState(null);
@@ -44,6 +45,8 @@ function Login() {
       )
         .then((userCredential) => {
           const user = userCredential.user;
+          toast.success('created');
+
 
           // Signed up
           updateProfile(user, {
@@ -80,7 +83,8 @@ function Login() {
         .then((userCredential) => {
           // Signed in
           const user = userCredential.user;
-          toast.success('login in success');
+          toast.success('Login Success');
+
           // console.log(user);
         })
         .catch((error) => {

@@ -9,8 +9,11 @@ import Footer from "./Footer";
 import Search from "./Search";
 import { useSelector } from "react-redux";
 import useUpcomingMovies from "../hooks/useUpcomingMovies";
+
+
 function Browse() {
   // custom hooks for fetching movie
+
 
   const showSearch = useSelector((state) => state.gpt.showGptSearch);
 
