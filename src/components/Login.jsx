@@ -13,6 +13,7 @@ import { updateProfile } from "firebase/auth";
 import {useDispatch} from 'react-redux';
 import { addUser } from "../store/userSlice";
 import  SignOutHeader from './SignOutHeader'
+import toast from 'react-hot-toast'
 
 function Login() {
   const [isSignInForm, setisSignInForm] = useState(true);
@@ -79,6 +80,7 @@ function Login() {
         .then((userCredential) => {
           // Signed in
           const user = userCredential.user;
+          toast.success('login in success');
           // console.log(user);
         })
         .catch((error) => {
