@@ -11,6 +11,8 @@ import { addUser, removeUser } from "../store/userSlice";
 import { toggleGptSearchView } from "../store/gptSlice";
 import { SUPPORTED_LANGUAGES } from "../utils/constant";
 import { changeLanguage } from "../store/configSlice";
+import toast from 'react-hot-toast'
+
 
 function SignOutHeader() {
   const navigate = useNavigate();
@@ -41,6 +43,7 @@ function SignOutHeader() {
         navigate("/Browse");
       } else {
         dispatch(removeUser());
+
       }
       // unsubscribe when component unmounts
       return () => unsubscribe();
