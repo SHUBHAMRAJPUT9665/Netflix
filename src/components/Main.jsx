@@ -20,7 +20,7 @@ function Main() {
       <div class="header">
         <SignOutHeader />
         <div class="header-content">
-          <h1 className="text-2xl ">{lang[langKey].headerh1}</h1>
+          <h1 className="text-2xl  mx-auto ">{lang[langKey].headerh1}</h1>
           <h3 className="text-2xl mt-5">{lang[langKey].headerh3}</h3>
           <p className="text-2xl font-semibold">{lang[langKey].headerp}</p>
 
