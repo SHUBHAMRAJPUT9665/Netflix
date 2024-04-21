@@ -2,9 +2,7 @@
 # Project link
 - https://netflix-seven-sandy.vercel.app/
 
-## 🚀 About Me
 
-## API Reference
 
 #### Firebase API
 
