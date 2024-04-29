@@ -27,5 +27,3 @@ const auth = firebase.auth();
     const errorMessage = error.message;
   });
 ```
-### Demo 
-- coming Soon
