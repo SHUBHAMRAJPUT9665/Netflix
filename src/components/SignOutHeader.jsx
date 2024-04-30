@@ -57,6 +57,7 @@ function SignOutHeader() {
   const handleLanguageChange = (e) => {
     // console.log(e.target.value);
     dispatch(changeLanguage(e.target.value));
+    toast.success(`language changed to ${e.target.value}`);
   };
   return (
     <div>
