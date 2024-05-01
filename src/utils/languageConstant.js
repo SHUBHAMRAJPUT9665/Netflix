@@ -95,8 +95,39 @@ const lang = {
         faq6label:'¿Netflix es buena para las niñas?',
         faq6p:'La experiencia Netflix Kids está incluida en tu membresía para brindarles a los padres el control mientras los niños disfrutan de programas de televisión y películas familiares en su propio espacio. Los perfiles infantiles vienen con controles parentales protegidos por PIN que te permiten restringir la clasificación de madurez del contenido que los niños pueden ver y bloquear títulos específicos que no quieres que vean.',
         small:'¿Listo para mirar? Ingrese su correo electrónico para crear o reiniciar su membresía.',
-        
+    },
+    spanish:{
+        search:'buscar',
+        gptSearchPlaceholder:'¿Qué película quieres ver?',
+        headerh1: 'Películas ilimitadas, programas de TV y más.',
+        headerh3: 'Mira en cualquier lugar. Cancele en cualquier momento.',
+        headerp: '¿Listo para mirar? Ingrese su correo electrónico para crear o reiniciar su membresía.',
+        headerbutton: 'Empezar',
+        featureh2:'Disfruta en tu televisor.',
+        featurep:'Míralo en televisores inteligentes, PlayStation, Xbox, Chromecast, Apple TV, reproductores de Blu-ray y más.',
+        feature2h2:'Descarga tus programas para verlos sin conexión',
+        feature2p:'Guarda tus favoritos fácilmente y siempre tendrás algo que ver.',
+        feature3h2:'Mira en todas partes',
+        feature3p:'Transmita películas y programas de TV ilimitados en su teléfono, tableta, computadora portátil y TV.',
+        feature4h2:'Crear perfiles para niñas',
+        feature4p:'Envíe a los niños a aventuras con sus personajes favoritos en un espacio creado solo para ellos, gratis con su membresía.',
+        faqh2:'Preguntas frecuentes',
+        email:'Dirección de correo electrónico',
+        faq1label:'¿Qué es Netflix?',
+        faq1p:'Netflix es un servicio de streaming que ofrece una amplia variedad de programas de televisión, películas, anime, documentales y más galardonados, en miles de dispositivos conectados a Internet. Puedes ver todo lo que quieras, cuando quieras, sin un solo anuncio, todo por un módico precio mensual. ¡Siempre hay algo nuevo que descubrir y cada semana se agregan nuevos programas de televisión y películas!',
+        faq2label:'¿Cuánto cuesta Netflix?',
+        faq2p:'Mira Netflix en tu teléfono inteligente, tableta, Smart TV, computadora portátil o dispositivo de transmisión, todo por una tarifa mensual fija. Los planes oscilan entre ₹ 149 y ₹ 649 al mes. Sin costes adicionales, sin contratos.',
+        faq3label:'¿Dónde puedo mirar?',
+        faq3p:'Mira en cualquier lugar y en cualquier momento. Inicie sesión con su cuenta de Netflix para mirar instantáneamente en la web en netflix.com desde su computadora personal o en cualquier dispositivo conectado a Internet que ofrezca la aplicación Netflix, incluidos televisores inteligentes, teléfonos inteligentes, tabletas, reproductores multimedia de transmisión y consolas de juegos. También descarga tus programas favoritos con la aplicación para iOS, Android o Windows 10. Utilice las descargas para mirar mientras viaja y sin conexión a Internet. Lleva Netflix contigo a cualquier parte.',
+        faq4label:'¿Cómo cancelo? ',
+        faq4p:'Netflix es flexible. No hay contratos molestos ni compromisos. Puede cancelar fácilmente su cuenta en línea con dos clics. No hay tarifas de cancelación para iniciar o cerrar su cuenta en ningún momento.',
+        faq5label:'¿Qué puedo ver en Netflix?',
+        faq5p:'Netflix tiene una extensa biblioteca de largometrajes, documentales, programas de televisión, anime, originales de Netflix galardonados y más. Mira todo lo que quieras, cuando quieras.',
+        faq6label:'¿Netflix es buena para las niñas?',
+        faq6p:'La experiencia Netflix Kids está incluida en tu membresía para brindarles a los padres el control mientras los niños disfrutan de programas de televisión y películas familiares en su propio espacio. Los perfiles infantiles vienen con controles parentales protegidos por PIN que te permiten restringir la clasificación de madurez del contenido que los niños pueden ver y bloquear títulos específicos que no quieres que vean.',
+        small:'¿Listo para mirar? Ingrese su correo electrónico para crear o reiniciar su membresía.',
     }
+
 
 }
 
