@@ -20,7 +20,7 @@ const MainContainer = () => {
   if (ClickMovie) {
     mainMovie = ClickMovie;
   } else {
-    mainMovie = movies[12];
+    mainMovie = movies[4];
   }
 
   const { original_title, overview, id } = mainMovie;
